@@ -101,7 +101,6 @@ header{
     background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     color: transparent;
     -webkit-background-clip: text;
-    
 }
 .header-content span{
     display: flex;
@@ -304,24 +303,7 @@ header{
 
 /* Play Instant Style End*/
 
-.play-games{
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    gap: 300px;
-    justify-content: space-around;
-}
-
-.play-games-content{
-    text-align: left;
-}
-.play-games-img-sub{
-    position: absolute;
-    transform: translate(550px, -300px);
-}
-
 /* Button Collection Style Start*/
-
 .button-collection{
     max-width: 90vw;
     margin: 120px auto;
@@ -731,7 +713,3 @@ footer p{
     
 }
 
-
-.hide{
-    display: none;
-}
