@@ -196,6 +196,7 @@ header{
     max-width: 90vw;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 30px;
 }
 .funny-videos h2{
     color: #0B0223;
@@ -224,7 +225,18 @@ header{
 .card{
     position: relative;
 }
-
+.card img{
+    width: 290px;
+    height: 340px;
+}
+.card:hover .card-btn{
+    display: flex;
+}
+.card:hover #card-img{
+    opacity: .6;
+    border: 2px solid #FF42A5;
+    border-radius: 17px;
+}
 .card-btn{
     position: absolute;
     top: 40%;
@@ -244,20 +256,6 @@ header{
     background: transparent;
     border: none;
 }
-
-.card img{
-    width: 290px;
-    height: 340px;
-}
-.card:hover .card-btn{
-    display: flex;
-}
-.card:hover #card-img{
-    opacity: .7;
-    border: 2px solid #FF42A5;
-    border-radius: 17px;
-} 
-
 .card p{
     color: #534C64;
     font-size: 16px;
