@@ -150,10 +150,10 @@ header{
     background-color: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .banner-img{
-    /* min-width: 60%; */
+    min-width: 60%;
 }
 .banner-img img{
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 
 .banner-content{
@@ -221,10 +221,42 @@ header{
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
+.card{
+    position: relative;
+}
+
+.card-btn{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.card-btn i{
+    color: white;
+    padding-bottom: 10px;
+}
+.card-btn button{
+    color: #FF42A5 ;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
+
 .card img{
     width: 290px;
     height: 340px;
 }
+.card:hover .card-btn{
+    display: flex;
+}
+.card:hover #card-img{
+    opacity: .7;
+    border: 2px solid #FF42A5;
+    border-radius: 17px;
+} 
 
 .card p{
     color: #534C64;
@@ -396,7 +428,6 @@ footer p{
 /* For Mobile Device*/
 @media screen and (max-width:576px) {
     .navbar {
-        border: 1px solid saddlebrown;
         flex-direction: column;
         max-width: 100%;
         margin: 0 auto;
@@ -425,7 +456,6 @@ footer p{
     .header-img{
         max-width: 100%;
         margin: 0 auto;
-        border: 1px solid saddlebrown;
     }
     .header-img img{
         max-width: 95%; 
@@ -580,7 +610,6 @@ footer p{
     .header-img{
         max-width: 100%;
         margin: 0 auto;
-        border: 1px solid saddlebrown;
     }
     .header-img img{
         max-width: 95%; 
