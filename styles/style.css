@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* Shared Style Start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+}
+
+
+/* Shared Style End*/
+
+/* Navbar Style Start */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-menu-list{
+    display: flex;
+}
+.follow{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 16px 24px;
+}
+.nav-menu-list li{
+    list-style: none;
+    padding-right: 20px;
+}
+.nav-menu-list li a{
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+.fa-youtube{
+    color: red;
+}
+.fa-brands{
+    padding-left: 5px;
+}
+.nav-logo h3{
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 15px;
+}
+.nav-logo h3 span{
+    color: #FF42A5 ;
+}
+/* Navbar Style End */
+
+/* Header Section Start */
+header{
+    background-image: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
+}
+.header-section{
+    display: flex;
+    gap: 160px;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    /* gap: 50px; */
+}
+.header-content{
+    max-width: 50%;
+    text-align: left;
+}
+.header-content h2{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header-content h1{
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    line-height: normal;
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.header-content span{
+    display: flex;
+    align-items: center;
+    padding-bottom: 17px;
+}
+.header-content span p{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+    padding-left: 10px;
+}
+.header-img{
+    max-width: 50%;
+}
+
+.btn-primary{
+    padding: 21px 40px;
+    border-radius: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+.btn-signin{
+    background-color: #FF42A5;
+}
+.btn-rogue{
+    background-color: #4EC5F7;
+}
+
+.banner-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+}
+.banner-content{
+    text-align: right;
+}
+
+
+.funny-videos{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+.funny-video-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+}
+.play-instant{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 300px;
+    justify-content: space-around;
+}
+
+.play-instant-content{
+    text-align: right;
+}
+.play-instant-img-sub{
+    position: absolute;
+    transform: translate(-150px, -300px);
+}
+
+.play-games{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 300px;
+    justify-content: space-around;
+}
+
+.play-games-content{
+    text-align: left;
+}
+.play-games-img-sub{
+    position: absolute;
+    transform: translate(550px, -300px);
+}
+.button-collection{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.button-collection a{
+    text-decoration: none;
+    
+}
+.button-card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px;
+    background-color: aqua;
+    border-radius: 70px;
+}
+.footer{
+    background-color: #000;
+    text-align: center;
+
+}
+.footer-menu-list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links-list{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:576px) {
+    .navbar {
+        border: 1px solid saddlebrown;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 100px auto 100px;
+        text-align: center;
+        background: #FFF;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu-list {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .nav-menu-list li {
+        padding-bottom: 30px;
+    }
+    header {
+        background-image: none;
+    }
+    .header-section {
+        flex-direction: column-reverse;
+        gap: 25px;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto; 
+    }
+    .header-img{
+        max-width: 100%;
+        margin: 0 auto;
+        border: 1px solid saddlebrown;
+    }
+    .header-img img{
+        max-width: 95%; 
+    }
+    .header-content {
+        max-width: 100%;
+        text-align: left;
+        background-image: url('../images/Group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header-content h2 {
+        font-size: 43px;
+    }
+    .header-content h1 {
+        font-size: 85px;
+    }
+    .header-content span {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .navbar {
+        flex-direction: column;
+        gap: 50px;
+        max-width: 1240px;
+        margin: 50px auto;
+        background: #FFF;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);     
+    }
+    .header-section {
+        flex-direction: column-reverse;
+        gap: 25px;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto; 
+    }
+    .header-img{
+        max-width: 100%;
+        margin: 0 auto;
+        border: 1px solid saddlebrown;
+    }
+    .header-img img{
+        max-width: 95%; 
+    }
+    .header-content {
+        max-width: 100%;
+        text-align: left;
+        background-image: url('../images/Group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.hide{
+    display: none;
+}
