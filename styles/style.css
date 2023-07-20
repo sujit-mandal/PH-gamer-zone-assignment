@@ -10,6 +10,9 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
 }
+.margin{
+    margin: 50px 200px 0 200px;
+}
 /* Shared Style End*/
 
 /* Navbar Style Start */
@@ -17,10 +20,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90vw;
     margin: 0 auto;
     padding: 30px 0;
     background: #FFF;
+    padding: 40px 200px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .nav-logo{
@@ -73,26 +76,20 @@ header{
 }
 .header-section{
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
     align-items: center;
-    max-width: 90vw;
-    margin: 0 auto;
 }
 .header-content{
-    max-width: 50%;
     text-align: left;
 }
 .header-content h2{
     color: #0B0223;
-    text-align: center;
     font-size: 48px;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
 }
-
 .header-content h1{
-    text-align: center;
     font-size: 95px;
     font-weight: 800;
     line-height: normal;
@@ -113,10 +110,6 @@ header{
     text-transform: lowercase;
     padding-left: 10px;
 }
-.header-img{
-    max-width: 50%;
-}
-
 .btn-primary{
     padding: 21px 40px;
     border-radius: 48px;
@@ -127,6 +120,7 @@ header{
 }
 .btn-signin{
     background-color: #FF42A5;
+    margin-right: 10px;
 }
 .btn-rogue{
     background-color: #4EC5F7;
@@ -140,19 +134,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90vw;
-    margin: 0 auto;
+    margin-top: 0;
     padding: 70px 0;
-    gap: auto;
     background-color: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
-.banner-img{
-    min-width: 60%;
-}
-.banner-img img{
-    max-width: 100%;
-}
-
 .banner-content{
     text-align: right;
 }
@@ -190,8 +175,6 @@ header{
 
 /* Funny Videos Style Start*/
 .funny-videos{
-    max-width: 90vw;
-    margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
 }
@@ -222,18 +205,11 @@ header{
 .card{
     position: relative;
 }
-.card img{
+/* .card img{
     width: 290px;
     height: 340px;
-}
-.card:hover .card-btn{
-    display: flex;
-}
-.card:hover #card-img{
-    opacity: .6;
-    border: 2px solid #FF42A5;
-    border-radius: 17px;
-}
+} */
+
 .card-btn{
     position: absolute;
     top: 40%;
@@ -242,6 +218,15 @@ header{
     display: flex;
     flex-direction: column;
     display: none;
+}
+.card:hover .card-img{
+    opacity: .6;
+    border: 2px solid #FF42A5;
+    border-radius: 17px;
+}
+
+.card:hover .card-btn{
+    display: flex;
 }
 .card-btn i{
     color: white;
@@ -265,8 +250,6 @@ header{
 
 /* Play Instant Style Start*/
 .play-instant{
-    max-width: 90vw;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,7 +257,9 @@ header{
 
 .play-instant-content{
     text-align: right;
+    float: flex-end;
     max-width: 30%;
+    padding-left: 30px;
 }
 .play-instant-content h2{
     color: #0B0223;
@@ -282,6 +267,7 @@ header{
     font-weight: 700;
     line-height: normal;
     padding-bottom: 10px;
+    
 }
 .play-instant-content h2 span{
     background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -303,8 +289,7 @@ header{
 
 /* Button Collection Style Start*/
 .button-collection{
-    max-width: 90vw;
-    margin: 120px auto;
+    padding: 80px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -324,6 +309,7 @@ header{
 }
 .button-card p{
     color: #0B0223;
+    font-size: 20px;
     font-weight: 600;
 }
 .button-collection a:hover .button-card{
@@ -341,7 +327,6 @@ header{
     text-align: center;
     padding: 90px 0 110px 0;
 }
-
 .footer-logo{
     display: flex;
     justify-content: center;
